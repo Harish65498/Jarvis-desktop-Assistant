@@ -16,6 +16,7 @@ Now as soon as the previous installation is complete run the next command:
 ```
 pip install speechRecognition
 ```
+Now as soon as the previous installation is complete run the next command:
 ```
 pip install wikipedia
 ```
