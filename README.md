@@ -1,4 +1,5 @@
 # Jarvis-desktop-Assistant
+
 ### Installation Steps
 Fire up you terminal and run the given commands provided that you have python and pip perfectly up and running
 ```
@@ -21,6 +22,3 @@ Now as soon as the previous installation is complete run the next command:
 pip install wikipedia
 ```
 Now you are ready to go. Just clone the repository and run the main.pyw file
-
-
-
