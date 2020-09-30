@@ -20,3 +20,7 @@ pip install speechRecognition
 pip install wikipedia
 ```
 Now you are ready to go. Just clone the repository and run the main.pyw file
+
+
+
+### Note: The pyw extention is used instead of py extension so that as soon as you run the file you do not get the command prompt like interface. This can be used in python projects like apps and games so that the disturbing cmd doesn't pop up
