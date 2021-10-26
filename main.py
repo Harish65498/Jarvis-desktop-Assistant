@@ -6,12 +6,15 @@ import webbrowser
 import os
 import smtplib
 
+import gui
+
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
 engine.setProperty('voice', voices[0].id)
 
 
 def speak(audio):
+    gui.speak(audio)
     engine.say(audio)
     engine.runAndWait()
 
@@ -59,7 +62,7 @@ def sendEmail(to, content):
 
 if __name__ == "__main__":
     wishMe()
-    while True:
+    def run_jarvis_desktop_assistant():
     # if 1:
         query = takeCommand().lower()
 
@@ -105,4 +108,6 @@ if __name__ == "__main__":
                 speak("Email has been sent!")
             except Exception as e:
                 print(e)
-                speak("Sorry my friend harry bhai. I am not able to send this email")    
+                speak("Sorry my friend harry bhai. I am not able to send this email")
+    gui.set_speak_command(run_jarvis_desktop_assistant)
+    gui.mainloop()
